@@ -1,0 +1,57 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#000000"/>
+
+  <!-- card frame -->
+  <rect x="60" y="60" width="480" height="280" rx="14" fill="#0d0d0d" stroke="#ffffff" stroke-width="1.5"/>
+
+  <!-- header row -->
+  <text x="90" y="105" font-family="Inter, Arial, sans-serif" font-size="14" letter-spacing="1.5" fill="#9ca3af">TOTAL BALANCE</text>
+  <text x="90" y="140" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">$4,285.50</text>
+
+  <!-- badge -->
+  <rect x="430" y="88" width="80" height="26" rx="13" fill="#000000" stroke="#4ade80" stroke-width="1.2"/>
+  <text x="470" y="105" font-family="Inter, Arial, sans-serif" font-size="12" fill="#4ade80" text-anchor="middle">+12.4%</text>
+
+  <!-- divider -->
+  <line x1="90" y1="165" x2="510" y2="165" stroke="#2a2a2a" stroke-width="1"/>
+
+  <!-- bar chart -->
+  <g fill="#ffffff" opacity="0.9">
+    <rect x="100" y="255" width="26" height="45" rx="3"/>
+    <rect x="145" y="225" width="26" height="75" rx="3"/>
+    <rect x="190" y="200" width="26" height="100" rx="3"/>
+    <rect x="235" y="240" width="26" height="60" rx="3"/>
+    <rect x="280" y="180" width="26" height="120" rx="3"/>
+    <rect x="325" y="210" width="26" height="90" rx="3"/>
+  </g>
+  <g fill="#4b4b4b">
+    <rect x="100" y="300" width="26" height="6"/>
+    <rect x="145" y="300" width="26" height="6"/>
+    <rect x="190" y="300" width="26" height="6"/>
+    <rect x="235" y="300" width="26" height="6"/>
+    <rect x="280" y="300" width="26" height="6"/>
+    <rect x="325" y="300" width="26" height="6"/>
+  </g>
+
+  <!-- transaction list mini -->
+  <g font-family="Inter, Arial, sans-serif" font-size="12" fill="#9ca3af">
+    <circle cx="390" cy="195" r="4" fill="#ffffff"/>
+    <text x="402" y="199">Groceries</text>
+    <text x="500" y="199" text-anchor="end" fill="#e5e7eb">-$64.20</text>
+
+    <circle cx="390" cy="225" r="4" fill="#ffffff"/>
+    <text x="402" y="229">Salary</text>
+    <text x="500" y="229" text-anchor="end" fill="#4ade80">+$1,200.00</text>
+
+    <circle cx="390" cy="255" r="4" fill="#ffffff"/>
+    <text x="402" y="259">Transport</text>
+    <text x="500" y="259" text-anchor="end" fill="#e5e7eb">-$18.75</text>
+
+    <circle cx="390" cy="285" r="4" fill="#ffffff"/>
+    <text x="402" y="289">Utilities</text>
+    <text x="500" y="289" text-anchor="end" fill="#e5e7eb">-$92.10</text>
+  </g>
+
+  <!-- corner label -->
+  <text x="30" y="370" font-family="Inter, Arial, sans-serif" font-size="13" letter-spacing="2" fill="#6b7280">EXPENSE TRACKER DASHBOARD</text>
+</svg>

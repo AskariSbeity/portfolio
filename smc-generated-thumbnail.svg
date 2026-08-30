@@ -1,0 +1,47 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#000000"/>
+
+  <!-- browser frame -->
+  <rect x="60" y="55" width="480" height="290" rx="14" fill="#0d0d0d" stroke="#ffffff" stroke-width="1.5"/>
+
+  <!-- nav bar -->
+  <text x="90" y="95" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1" fill="#ffffff">SBEITY MEDICAL CENTER</text>
+  <rect x="422" y="80" width="88" height="24" rx="12" fill="#ffffff"/>
+  <text x="466" y="96" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#000000" text-anchor="middle" letter-spacing="0.5">BOOK VISIT</text>
+  <line x1="90" y1="114" x2="510" y2="114" stroke="#2a2a2a" stroke-width="1"/>
+
+  <!-- section label -->
+  <text x="90" y="140" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#6b7280">OUR SPECIALTIES</text>
+
+  <!-- service line cards -->
+  <g font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">
+    <g>
+      <rect x="90" y="155" width="86" height="72" rx="10" fill="#000000" stroke="#4b4b4b" stroke-width="1.2"/>
+      <circle cx="133" cy="182" r="11" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="133" y="215">Neurology</text>
+    </g>
+    <g>
+      <rect x="188" y="155" width="86" height="72" rx="10" fill="#000000" stroke="#4b4b4b" stroke-width="1.2"/>
+      <circle cx="231" cy="182" r="11" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="231" y="215">Cardiology</text>
+    </g>
+    <g>
+      <rect x="286" y="155" width="86" height="72" rx="10" fill="#000000" stroke="#ffffff" stroke-width="1.5"/>
+      <circle cx="329" cy="182" r="11" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="329" y="215">Pediatrics</text>
+    </g>
+    <g>
+      <rect x="384" y="155" width="86" height="72" rx="10" fill="#000000" stroke="#4b4b4b" stroke-width="1.2"/>
+      <circle cx="427" cy="182" r="11" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="427" y="215">Orthopedics</text>
+    </g>
+    <g>
+      <rect x="188" y="240" width="86" height="72" rx="10" fill="#000000" stroke="#4b4b4b" stroke-width="1.2"/>
+      <circle cx="231" cy="267" r="11" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="231" y="300">Dermatology</text>
+    </g>
+  </g>
+
+  <!-- corner label -->
+  <text x="30" y="380" font-family="Inter, Arial, sans-serif" font-size="13" letter-spacing="2" fill="#6b7280">MULTI-SPECIALTY HEALTHCARE WEBSITE</text>
+</svg>
