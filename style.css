@@ -5793,3 +5793,92 @@ body::before {
     --foot-h: 190px;
   }
 }
+/* ==========================================================
+   PROJECT CARDS — real project photos + project name
+   Each photo fills the card; the focus classes decide which
+   part of a wide screenshot stays visible in the tall card.
+   ========================================================== */
+.shot-art img {
+  opacity: 1;
+  object-fit: cover;
+}
+.shot-left img {
+  object-position: left center;
+}
+.shot-center img {
+  object-position: center center;
+}
+.shot-top img {
+  object-position: center top;
+}
+
+/* Soft dark fade at the bottom so the name is always readable */
+.shot-art::after {
+  background: linear-gradient(
+    0deg,
+    rgba(9, 9, 9, 0.94) 0%,
+    rgba(9, 9, 9, 0.6) 16%,
+    rgba(9, 9, 9, 0) 36%
+  );
+}
+
+/* Project name on every card (sizes are in the 560px card canvas,
+   which is scaled down automatically) */
+.art-name {
+  position: absolute;
+  z-index: 3;
+  left: 36px;
+  right: 36px;
+  bottom: 38px;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+  color: #fff;
+  text-align: left;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+}
+
+/* ==========================================================
+   DIALOG CLOSE BUTTON (project details + certificate viewer)
+   Small square icon button in the site's burgundy style.
+   ========================================================== */
+.icon-close {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E");
+}
+
+.dialog-close,
+.project-dialog .dialog-close,
+.cert-dialog .dialog-close {
+  position: static;
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid #4b3a43;
+  border-radius: 0;
+  background: transparent;
+  color: #e6dce1;
+  font-size: 13px;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+.dialog-close:hover {
+  background: var(--burgundy);
+  border-color: var(--burgundy);
+  color: #fff;
+}
+.dialog-close:focus-visible {
+  outline: 1px solid #c3416d;
+  outline-offset: 2px;
+}
+.dialog-close .icon {
+  font-size: 13px;
+  vertical-align: 0;
+}
