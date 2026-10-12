@@ -140,7 +140,7 @@ body::before{background:radial-gradient(ellipse at 76% 14%,rgba(195,65,109,.07),
 }
 @media(max-width:760px){
   .p3-sticky{--cw:236px;--ch:318px;--as:.4214}
-  .p3-top{top:78px;padding-inline:20px;flex-direction:column;align-items:flex-start;gap:6px}
+  .p3-top{top:0px;padding-inline:20px;flex-direction:column;align-items:flex-start;gap:6px}
   .p3-top .filters{overflow-x:auto;flex-wrap:nowrap;width:100%;scrollbar-width:none}
   .p3-top .filters::-webkit-scrollbar{display:none}
   .filter-button{white-space:nowrap}
@@ -551,7 +551,7 @@ body::before {
   .site-nav{left:0!important;right:0!important;width:100%;padding:12px 22px 18px!important;border-left:1px solid #292329;border-right:1px solid #292329}
   .site-nav .nav-link{padding:12px 8px!important;margin:0!important;min-width:0}
   .site-nav .resume-link{margin:12px 0 0!important;padding:11px 14px!important}
-  .p3-top{top:78px;padding:0 14px 18px!important;gap:8px}
+  .p3-top{top:0px;padding:0 14px 18px!important;gap:8px}
   .p3-top .filters{position:relative;z-index:22;display:flex;gap:4px;overflow-x:auto;overflow-y:hidden;max-width:100%;padding:4px 2px 8px;background:#090909;scrollbar-width:none}
   .p3-top .filters::-webkit-scrollbar{display:none}
   .p3-top .filter-button{flex:0 0 auto;padding:8px 10px;font-size:10px}
