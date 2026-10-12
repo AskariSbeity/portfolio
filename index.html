@@ -1,163 +1,1267 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090909">
-  <meta name="description" content="Askari Sbeity — Computer Science student and software developer building thoughtful web and mobile applications.">
-  <title>Askari Sbeity — Software Developer</title>
-  <link rel="icon" href="Askari logo whitenobg.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <!-- EmailJS SDK: it was missing before, which caused the "contact service could not load" error -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <div class="scroll-progress" aria-hidden="true"></div>
-  <header class="site-header" id="top">
-    <a class="wordmark" href="#top" aria-label="Askari Sbeity home">Askari <span>Sbeity</span><i>.</i></a>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
-    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-      <a class="nav-link active" href="#top">Home</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#projects">Projects</a><a class="nav-link" href="#experience">Experience</a><a class="nav-link" href="#contact">Contact</a><a class="nav-link" href="#skills">Skills</a><a class="nav-link" href="#process">Process</a><a class="nav-link" href="#certificates">Awards</a>
-      <a class="resume-link" href="resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090909" />
+    <meta
+      name="description"
+      content="Askari Sbeity — Computer Science student and software developer building thoughtful web and mobile applications."
+    />
+    <title>Askari Sbeity — Software Developer</title>
+    <link rel="icon" href="Askari logo whitenobg.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- EmailJS SDK: it was missing before, which caused the "contact service could not load" error -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="Askari Sbeity home"
+        >Askari <span>Sbeity</span><i>.</i></a
+      >
+      <button
+        class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#top">Home</a><a class="nav-link" href="#about">About</a
+        ><a class="nav-link" href="#projects">Projects</a
+        ><a class="nav-link" href="#experience">Experience</a
+        ><a class="nav-link" href="#contact">Contact</a><a class="nav-link" href="#skills">Skills</a
+        ><a class="nav-link" href="#process">Process</a
+        ><a class="nav-link" href="#certificates">Awards</a>
+        <a class="resume-link" href="resume.pdf" target="_blank" rel="noopener"
+          >Resume <span class="icon icon-arrow" aria-hidden="true"></span
+        ></a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero section-shell" id="home" aria-labelledby="hero-title">
-      <div class="hero-bg" aria-hidden="true"><span class="hero-grid"></span><span class="hero-glow glow-a"></span><span class="hero-glow glow-b"></span><span class="hero-spot"></span><span class="hero-noise"></span></div>
-      <div class="hero-copy">
-        <p class="eyebrow hero-chip"><span class="status-dot"></span> SOFTWARE DEVELOPER · COMPUTER SCIENCE</p>
-        <div class="hero-manifesto" id="hero-title"><p class="manifesto-kicker">IDEAS INTO IMPACT</p><h1 class="statement" aria-label="I design. I build. I lead."><span class="stmt-line is-active" data-caption="Shape the experience." data-index="01" aria-hidden="true"><span class="stmt-text" data-text="I design.">I design.</span></span><span class="stmt-line" data-caption="Make the idea real." data-index="02" aria-hidden="true"><span class="stmt-text" data-text="I build.">I build.</span></span><span class="stmt-line" data-caption="Bring people forward." data-index="03" aria-hidden="true"><span class="stmt-text" data-text="I lead.">I lead.</span></span></h1><div class="manifesto-trail"><span class="manifesto-index" id="manifesto-index">01</span><span class="manifesto-line"><i id="stmt-bar-fill"></i></span><span id="manifesto-caption">Shape the experience.</span></div></div>
-        <p class="hero-description">I'm Askari, a Computer Science student and software developer who enjoys turning thoughtful ideas into useful, well-built digital products.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↗</span></a><a class="button button-ghost" href="#contact">Get in touch <span>↗</span></a></div>
-        <div class="hero-stats"><div><b data-count="7">00</b><span>PROJECTS<br>BUILT</span></div><div><b data-count="10">00</b><span>CERTIFICATES<br>EARNED</span></div><div><b data-count="7">00</b><span>ROLES &amp;<br>LEADERSHIP</span></div></div>
-        <div class="social-row" aria-label="Social links"><a href="https://github.com/AskariSbeity" target="_blank" rel="noopener">GitHub <span>↗</span></a><a href="https://www.linkedin.com/in/askarisbeity/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a><a href="mailto:askarisbeity@gmail.com">Email <span>↗</span></a></div>
-      </div>
-      <div class="hero-visual">
-        <div class="portrait-orbit orbit-one"></div><div class="portrait-orbit orbit-two"></div>
-        <div class="portrait-frame"><img src="askari-burgundy-portrait.jpeg" alt="Askari Sbeity in a burgundy jacket" fetchpriority="high"></div>
-        <div class="terminal-card" aria-label="Developer terminal decoration"><div class="terminal-top"><span></span><span></span><span></span><small>~/askari/portfolio</small></div><div class="terminal-body"><p><b>$</b> whoami</p><p class="terminal-output">software developer</p><p><b>$</b> focus --current</p><p class="terminal-output">web · mobile · product</p><p class="terminal-prompt"><b>$</b> <i></i></p></div></div>
-        <div class="visual-note"><span class="note-mark">✳</span><span>Building better<br>solutions, one line at a time.</span></div>
-        <span class="hero-index">01 <i></i> 07</span>
-      </div>
-      <div class="hero-marquee" aria-hidden="true"><div class="marquee-track"><div class="marquee-set"><span>React</span><i>✳</i><span>TypeScript</span><i>✳</i><span>Node.js</span><i>✳</i><span>Express</span><i>✳</i><span>Flutter</span><i>✳</i><span>Dart</span><i>✳</i><span>Python</span><i>✳</i><span>MySQL</span><i>✳</i><span>PostgreSQL</span><i>✳</i><span>Prisma</span><i>✳</i><span>Git</span><i>✳</i><span>REST APIs</span><i>✳</i></div><div class="marquee-set"><span>React</span><i>✳</i><span>TypeScript</span><i>✳</i><span>Node.js</span><i>✳</i><span>Express</span><i>✳</i><span>Flutter</span><i>✳</i><span>Dart</span><i>✳</i><span>Python</span><i>✳</i><span>MySQL</span><i>✳</i><span>PostgreSQL</span><i>✳</i><span>Prisma</span><i>✳</i><span>Git</span><i>✳</i><span>REST APIs</span><i>✳</i></div></div></div>
-    </section>
-
-    <section class="about-skills about-section section-shell section-pad" id="about">
-      <div class="about-panel"><p class="eyebrow"><span class="section-number">01</span> A LITTLE ABOUT ME</p><h2>Curious by nature.<br><span class="muted-italic">Builder by choice.</span></h2><p>I'm a Computer Science student at Phoenicia University with a strong interest in software engineering, product thinking, and creating digital experiences that feel as good to use as they are to build.</p><p>I enjoy moving between the details of implementation and the bigger picture: understanding a problem, shaping a solution, and working with people to bring it to life.</p><div class="about-facts"><div><span>01</span><b>Product-minded</b><small>I care about the why, not just the how.</small></div><div><span>02</span><b>Always learning</b><small>Every build is a chance to get better.</small></div><div><span>03</span><b>Community-driven</b><small>I value collaboration and shared momentum.</small></div></div></div>
-      <div class="about-side"><p class="eyebrow"><span class="section-number">&#10033;</span> CURRENTLY</p><h3 class="about-side-title">Learning, building,<br><span class="muted-italic">moving forward.</span></h3><div class="education-detail"><span class="education-icon">✳</span><div><p class="project-type">EDUCATION</p><h3>Phoenicia University</h3><p>BSc Computer Science</p><span class="mono-label">SEP 2023 — EXPECTED AUG 2027</span></div></div><div class="education-detail"><span class="education-icon">↗</span><div><p class="project-type">OUTSIDE THE EDITOR</p><h3>Community & events</h3><p>Technology communities, event planning, and bringing people together around shared ideas.</p></div></div></div>
-    </section>
-
-    <section class="projects-section" id="projects">
-      <div class="section-shell section-pad p3-head">
-        <div class="section-heading projects-heading"><div><p class="eyebrow"><span class="section-number">02</span> SELECTED WORK</p><h2>Things I've <span class="muted-italic">built.</span></h2><p class="section-lede">A collection of products, interfaces, and experiments shaped by curiosity and a love for solving problems.</p></div><div class="project-count"><strong>07</strong><span>PROJECTS<br>AND COUNTING</span></div></div>
-      </div>
-      <div class="p3-scroll" id="p3-scroll">
-        <div class="p3-sticky" id="p3-sticky">
-          <div class="p3-ghost" id="p3-ghost" aria-hidden="true">Syncora</div>
-          <div class="p3-top">
-            <div class="filters" role="group" aria-label="Filter projects"><button class="filter-button is-active" data-filter="all" aria-pressed="true">All work <span id="p3-total-btn">07</span></button><button class="filter-button" data-filter="web" aria-pressed="false">Web</button><button class="filter-button" data-filter="mobile" aria-pressed="false">Mobile</button><button class="filter-button" data-filter="fullstack" aria-pressed="false">Full stack</button><button class="filter-button" data-filter="database" aria-pressed="false">Database</button><button class="filter-button" data-filter="networking" aria-pressed="false">Networking</button></div>
-            <p class="p3-hint">SCROLL · DRAG · EXPLORE</p>
-          </div>
-          <div class="p3-viewport" id="p3-viewport" role="region" aria-roledescription="3D project gallery" aria-label="Projects. Scroll, drag, or use the arrow keys to move through them." tabindex="0">
-            <div class="p3-world" id="p3-world">
-          <article class="p3-card" data-categories="fullstack web" data-project="syncora" tabindex="-1"><div class="project-art syncora-art"><div class="mock-window"><div class="mock-sidebar"><div class="mock-brand"><span class="mock-brand-dot"></span> syncora</div><span class="mock-side-active">▦ &nbsp; Overview</span><span>▤ &nbsp; Projects</span><span>◷ &nbsp; My tasks</span><span>◎ &nbsp; Messages</span><span>⚙ &nbsp; Settings</span></div><div class="mock-main"><div class="mock-topline"><span>Workspace / Overview</span><span class="mock-avatar">AS</span></div><div class="mock-greeting">Good morning, Askari <span>✳</span></div><div class="mock-stats"><div><small>Active projects</small><b>08</b></div><div><small>Tasks completed</small><b>24</b></div><div><small>Team members</small><b>06</b></div></div><div class="mock-chart"><div class="chart-label">Team activity <span>Last 7 days</span></div><svg viewBox="0 0 400 90" role="img" aria-label="Decorative activity line chart"><path d="M0 70 C30 68 36 38 70 48 S115 74 145 44 S188 55 218 28 S264 52 295 20 S346 43 400 7" fill="none" stroke="#8d304c" stroke-width="3"/><path d="M0 70 C30 68 36 38 70 48 S115 74 145 44 S188 55 218 28 S264 52 295 20 S346 43 400 7 L400 90 L0 90Z" fill="url(#chartFill)" opacity=".18"/><defs><linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8d304c"/><stop offset="1" stop-color="#8d304c" stop-opacity="0"/></linearGradient></defs></svg></div><div class="mock-task-row"><span class="task-check">✓</span><span>Design system updates</span><i>Done</i></div><div class="mock-task-row"><span class="task-check pending">•</span><span>Review sprint backlog</span><i>In progress</i></div></div></div><span class="art-index">01 / PRODUCT CONCEPT</span></div><div class="p3-shade"></div></article>
-          <article class="p3-card" data-categories="fullstack web" data-project="chefmate" tabindex="-1"><div class="project-art chefmate-art chefmate-web-art"><div class="chefmate-web-mark">CHEF<span>MATE</span><i>✳</i></div><div class="chefmate-label">FRESH IDEAS.<br><b>BETTER MEALS.</b></div><span class="art-index">02 / FULL STACK WEBSITE</span></div><div class="p3-shade"></div></article>
-          <article class="p3-card" data-categories="web" data-project="krispy" tabindex="-1"><div class="project-art image-art"><img src="krispy-thumbnail.webp" alt="Krispy Tender restaurant website preview" loading="lazy"><span class="art-index">03 / WEB EXPERIENCE</span><span class="image-art-label">Made to<br><em>crave.</em></span></div><div class="p3-shade"></div></article>
-          <article class="p3-card" data-categories="mobile" data-project="chefmate-mobile" tabindex="-1"><div class="project-art extra-art mobile-art"><div class="phone-pair"><div class="mini-phone"><div class="mini-notch"></div><span class="mini-label">CHEFMATE</span><b>What's in<br>your kitchen?</b><div class="mini-food"></div><small>Find your next meal</small></div><div class="mini-phone phone-offset"><div class="mini-notch"></div><span class="mini-label">YOUR RECIPES</span><div class="mini-recipe"></div><b>Fresh ideas.<br>Less waste.</b><small>Saved just for you</small></div></div><span class="art-index">04 / FLUTTER MOBILE APP</span></div><div class="p3-shade"></div></article>
-          <article class="p3-card" data-categories="database" data-project="krispy-db" tabindex="-1"><div class="project-art extra-art database-art"><div class="database-window"><div class="database-top"><span>KRISPY_TENDER_DB</span><span>3NF / MYSQL</span></div><div class="db-table db-table-one"><b>ORDERS</b><i>order_id</i><i>customer_id</i><i>created_at</i></div><div class="db-table db-table-two"><b>ORDER_ITEMS</b><i>item_id</i><i>order_id</i><i>quantity</i></div><div class="db-table db-table-three"><b>MENU_ITEMS</b><i>item_id</i><i>category_id</i><i>price</i></div><span class="db-link link-one"></span><span class="db-link link-two"></span></div><span class="art-index">05 / DATABASE DESIGN</span></div><div class="p3-shade"></div></article>
-          <article class="p3-card" data-categories="networking" data-project="tcp-recipe" tabindex="-1"><div class="project-art extra-art tcp-art"><div class="tcp-scene"><div class="tcp-node node-client"><span>CLIENT</span><b>recipe.request()</b></div><div class="tcp-packets"><i></i><i></i><i></i><span>TCP / SOCKETS</span></div><div class="tcp-node node-server"><span>SERVER</span><b>recipe.payload</b></div><div class="tcp-terminal"><span>01</span> bind() <span>02</span> listen() <span>03</span> accept()</div></div><span class="art-index">06 / NETWORK PROGRAMMING</span></div><div class="p3-shade"></div></article>
-          <article class="p3-card" data-categories="fullstack web" data-project="expense" tabindex="-1"><div class="project-art expense-art"><div class="expense-paper"><span class="expense-kicker">MONTHLY OVERVIEW</span><div class="expense-total">$2,480<span>.00</span></div><div class="expense-sub">Total expenses <b>↓ 8.4%</b></div><div class="expense-bars"><i style="height:38%"></i><i style="height:60%"></i><i style="height:47%"></i><i style="height:76%"></i><i style="height:52%"></i><i style="height:92%"></i><i style="height:66%"></i><i style="height:80%"></i></div><div class="expense-cats"><span>● Essentials</span><span>● Lifestyle</span><span>● Other</span></div></div><span class="art-index">07 / TEAM PROJECT</span></div><div class="p3-shade"></div></article>
+    <main>
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true">
+          <span class="hero-grid"></span><span class="hero-glow glow-a"></span
+          ><span class="hero-glow glow-b"></span><span class="hero-spot"></span
+          ><span class="hero-noise"></span>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow hero-chip">
+            <span class="status-dot"></span> SOFTWARE DEVELOPER · COMPUTER SCIENCE
+          </p>
+          <div class="hero-manifesto" id="hero-title">
+            <p class="manifesto-kicker">IDEAS INTO IMPACT</p>
+            <h1 class="statement" aria-label="I design. I build. I lead.">
+              <span
+                class="stmt-line is-active"
+                data-caption="Shape the experience."
+                data-index="01"
+                aria-hidden="true"
+                ><span class="stmt-text" data-text="I design.">I design.</span></span
+              ><span
+                class="stmt-line"
+                data-caption="Make the idea real."
+                data-index="02"
+                aria-hidden="true"
+                ><span class="stmt-text" data-text="I build.">I build.</span></span
+              ><span
+                class="stmt-line"
+                data-caption="Bring people forward."
+                data-index="03"
+                aria-hidden="true"
+                ><span class="stmt-text" data-text="I lead.">I lead.</span></span
+              >
+            </h1>
+            <div class="manifesto-trail">
+              <span class="manifesto-index" id="manifesto-index">01</span
+              ><span class="manifesto-line"><i id="stmt-bar-fill"></i></span
+              ><span id="manifesto-caption">Shape the experience.</span>
             </div>
           </div>
-          <div class="p3-info" id="p3-info" aria-live="polite">
-            <span class="p3-info-index" id="p3-idx">01</span>
-            <p class="project-type" id="p3-type"></p>
-            <h3 id="p3-title"></h3>
-            <p class="p3-desc" id="p3-desc"></p>
-            <div class="tag-row" id="p3-tags"></div>
-            <button class="button button-primary" id="p3-open" type="button">Explore project <span>↗</span></button>
+          <p class="hero-description">
+            I'm Askari, a Computer Science student and software developer who enjoys turning
+            thoughtful ideas into useful, well-built digital products.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects"
+              >Explore my work <span class="icon icon-arrow" aria-hidden="true"></span></a
+            ><a class="button button-ghost" href="#contact"
+              >Get in touch <span class="icon icon-arrow" aria-hidden="true"></span
+            ></a>
           </div>
-          <div class="p3-bottom">
-            <div class="p3-nav"><span class="p3-count"><b id="p3-current">01</b><i>/</i><span id="p3-total">07</span></span><button type="button" id="p3-prev" aria-label="Previous project">←</button><button type="button" id="p3-next" aria-label="Next project">→</button></div>
+          <div class="hero-stats">
+            <div>
+              <b data-count="7">00</b><span>PROJECTS<br />BUILT</span>
+            </div>
+            <div>
+              <b data-count="10">00</b><span>CERTIFICATES<br />EARNED</span>
+            </div>
+            <div>
+              <b data-count="7">00</b><span>ROLES &amp;<br />LEADERSHIP</span>
+            </div>
           </div>
-          <div class="p3-progress" aria-hidden="true"><span id="p3-fill"></span></div>
+          <div class="social-row" aria-label="Social links">
+            <a href="https://github.com/AskariSbeity" target="_blank" rel="noopener"
+              >GitHub <span class="icon icon-arrow" aria-hidden="true"></span></a
+            ><a href="https://www.linkedin.com/in/askarisbeity/" target="_blank" rel="noopener"
+              >LinkedIn <span class="icon icon-arrow" aria-hidden="true"></span></a
+            ><a href="mailto:askarisbeity@gmail.com"
+              >Email <span class="icon icon-arrow" aria-hidden="true"></span
+            ></a>
+          </div>
         </div>
+        <div class="hero-visual">
+          <div class="portrait-orbit orbit-one"></div>
+          <div class="portrait-orbit orbit-two"></div>
+          <div class="portrait-frame">
+            <img
+              src="askari-burgundy-portrait.jpeg"
+              alt="Askari Sbeity in a burgundy jacket"
+              fetchpriority="high"
+            />
+          </div>
+          <div class="terminal-card" aria-label="Developer terminal decoration">
+            <div class="terminal-top">
+              <span></span><span></span><span></span><small>~/askari/portfolio</small>
+            </div>
+            <div class="terminal-body">
+              <p><b>$</b> whoami</p>
+              <p class="terminal-output">software developer</p>
+              <p><b>$</b> focus --current</p>
+              <p class="terminal-output">web · mobile · product</p>
+              <p class="terminal-prompt"><b>$</b> <i></i></p>
+            </div>
+          </div>
+          <div class="visual-note">
+            <span class="note-mark"><span class="icon icon-star" aria-hidden="true"></span></span
+            ><span>Building better<br />solutions, one line at a time.</span>
+          </div>
+          <span class="hero-index">01 <i></i> 07</span>
+        </div>
+        <div class="hero-marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <div class="marquee-set">
+              <span>React</span><i class="icon icon-star" aria-hidden="true"></i
+              ><span>TypeScript</span><i class="icon icon-star" aria-hidden="true"></i
+              ><span>Node.js</span><i class="icon icon-star" aria-hidden="true"></i
+              ><span>Express</span><i class="icon icon-star" aria-hidden="true"></i
+              ><span>Flutter</span><i class="icon icon-star" aria-hidden="true"></i><span>Dart</span
+              ><i class="icon icon-star" aria-hidden="true"></i><span>Python</span
+              ><i class="icon icon-star" aria-hidden="true"></i><span>MySQL</span
+              ><i class="icon icon-star" aria-hidden="true"></i><span>PostgreSQL</span
+              ><i class="icon icon-star" aria-hidden="true"></i><span>Prisma</span
+              ><i class="icon icon-star" aria-hidden="true"></i><span>Git</span
+              ><i class="icon icon-star" aria-hidden="true"></i><span>REST APIs</span
+              ><i class="icon icon-star" aria-hidden="true"></i>
+            </div>
+            <div class="marquee-set">
+              <span>React</span><i class="icon icon-star" aria-hidden="true"></i
+              ><span>TypeScript</span><i class="icon icon-star" aria-hidden="true"></i
+              ><span>Node.js</span><i class="icon icon-star" aria-hidden="true"></i
+              ><span>Express</span><i class="icon icon-star" aria-hidden="true"></i
+              ><span>Flutter</span><i class="icon icon-star" aria-hidden="true"></i><span>Dart</span
+              ><i class="icon icon-star" aria-hidden="true"></i><span>Python</span
+              ><i class="icon icon-star" aria-hidden="true"></i><span>MySQL</span
+              ><i class="icon icon-star" aria-hidden="true"></i><span>PostgreSQL</span
+              ><i class="icon icon-star" aria-hidden="true"></i><span>Prisma</span
+              ><i class="icon icon-star" aria-hidden="true"></i><span>Git</span
+              ><i class="icon icon-star" aria-hidden="true"></i><span>REST APIs</span
+              ><i class="icon icon-star" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-skills about-section section-shell section-pad" id="about">
+        <div class="about-panel">
+          <p class="eyebrow"><span class="section-number">01</span> A LITTLE ABOUT ME</p>
+          <h2>Curious by nature.<br /><span class="muted-italic">Builder by choice.</span></h2>
+          <p>
+            I'm a Computer Science student at Phoenicia University with a strong interest in
+            software engineering, product thinking, and creating digital experiences that feel as
+            good to use as they are to build.
+          </p>
+          <p>
+            I enjoy moving between the details of implementation and the bigger picture:
+            understanding a problem, shaping a solution, and working with people to bring it to
+            life.
+          </p>
+          <div class="about-facts">
+            <div>
+              <span>01</span><b>Product-minded</b
+              ><small>I care about the why, not just the how.</small>
+            </div>
+            <div>
+              <span>02</span><b>Always learning</b
+              ><small>Every build is a chance to get better.</small>
+            </div>
+            <div>
+              <span>03</span><b>Community-driven</b
+              ><small>I value collaboration and shared momentum.</small>
+            </div>
+          </div>
+        </div>
+        <div class="about-side">
+          <p class="eyebrow">
+            <span class="section-number"
+              ><span class="icon icon-star" aria-hidden="true"></span
+            ></span>
+            CURRENTLY
+          </p>
+          <h3 class="about-side-title">
+            Learning, building,<br /><span class="muted-italic">moving forward.</span>
+          </h3>
+          <div class="education-detail">
+            <span class="education-icon"
+              ><span class="icon icon-star" aria-hidden="true"></span
+            ></span>
+            <div>
+              <p class="project-type">EDUCATION</p>
+              <h3>Phoenicia University</h3>
+              <p>BSc Computer Science</p>
+              <span class="mono-label">SEP 2023 — EXPECTED AUG 2027</span>
+            </div>
+          </div>
+          <div class="education-detail">
+            <span class="education-icon"
+              ><span class="icon icon-arrow" aria-hidden="true"></span
+            ></span>
+            <div>
+              <p class="project-type">OUTSIDE THE EDITOR</p>
+              <h3>Community & events</h3>
+              <p>
+                Technology communities, event planning, and bringing people together around shared
+                ideas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <div class="section-shell section-pad p3-head">
+          <div class="section-heading projects-heading">
+            <div>
+              <p class="eyebrow"><span class="section-number">02</span> SELECTED WORK</p>
+              <h2>Things I've <span class="muted-italic">built.</span></h2>
+              <p class="section-lede">
+                A collection of products, interfaces, and experiments shaped by curiosity and a love
+                for solving problems.
+              </p>
+            </div>
+            <div class="project-count">
+              <strong>07</strong><span>PROJECTS<br />AND COUNTING</span>
+            </div>
+          </div>
+        </div>
+        <div class="p3-scroll" id="p3-scroll">
+          <div class="p3-sticky" id="p3-sticky">
+            <div class="p3-ghost" id="p3-ghost" aria-hidden="true">Syncora</div>
+            <div class="p3-top">
+              <div class="filters" role="group" aria-label="Filter projects">
+                <button class="filter-button is-active" data-filter="all" aria-pressed="true">
+                  All work <span id="p3-total-btn">07</span></button
+                ><button class="filter-button" data-filter="web" aria-pressed="false">Web</button
+                ><button class="filter-button" data-filter="mobile" aria-pressed="false">
+                  Mobile</button
+                ><button class="filter-button" data-filter="fullstack" aria-pressed="false">
+                  Full stack</button
+                ><button class="filter-button" data-filter="database" aria-pressed="false">
+                  Database</button
+                ><button class="filter-button" data-filter="networking" aria-pressed="false">
+                  Networking
+                </button>
+              </div>
+              <p class="p3-hint">SCROLL · DRAG · EXPLORE</p>
+            </div>
+            <div
+              class="p3-viewport"
+              id="p3-viewport"
+              role="region"
+              aria-roledescription="3D project gallery"
+              aria-label="Projects. Scroll, drag, or use the arrow keys to move through them."
+              tabindex="0"
+            >
+              <div class="p3-world" id="p3-world">
+                <article
+                  class="p3-card"
+                  data-categories="fullstack web"
+                  data-project="syncora"
+                  tabindex="-1"
+                >
+                  <div class="project-art syncora-art">
+                    <div class="mock-window">
+                      <div class="mock-sidebar">
+                        <div class="mock-brand"><span class="mock-brand-dot"></span> syncora</div>
+                        <span class="mock-side-active">▦ &nbsp; Overview</span
+                        ><span>▤ &nbsp; Projects</span><span>◷ &nbsp; My tasks</span
+                        ><span>◎ &nbsp; Messages</span
+                        ><span
+                          ><span class="icon icon-gear" aria-hidden="true"></span> &nbsp;
+                          Settings</span
+                        >
+                      </div>
+                      <div class="mock-main">
+                        <div class="mock-topline">
+                          <span>Workspace / Overview</span><span class="mock-avatar">AS</span>
+                        </div>
+                        <div class="mock-greeting">
+                          Good morning, Askari
+                          <span class="icon icon-star" aria-hidden="true"></span>
+                        </div>
+                        <div class="mock-stats">
+                          <div><small>Active projects</small><b>08</b></div>
+                          <div><small>Tasks completed</small><b>24</b></div>
+                          <div><small>Team members</small><b>06</b></div>
+                        </div>
+                        <div class="mock-chart">
+                          <div class="chart-label">Team activity <span>Last 7 days</span></div>
+                          <svg
+                            viewBox="0 0 400 90"
+                            role="img"
+                            aria-label="Decorative activity line chart"
+                          >
+                            <path
+                              d="M0 70 C30 68 36 38 70 48 S115 74 145 44 S188 55 218 28 S264 52 295 20 S346 43 400 7"
+                              fill="none"
+                              stroke="#8d304c"
+                              stroke-width="3"
+                            />
+                            <path
+                              d="M0 70 C30 68 36 38 70 48 S115 74 145 44 S188 55 218 28 S264 52 295 20 S346 43 400 7 L400 90 L0 90Z"
+                              fill="url(#chartFill)"
+                              opacity=".18"
+                            />
+                            <defs>
+                              <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#8d304c" />
+                                <stop offset="1" stop-color="#8d304c" stop-opacity="0" />
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div class="mock-task-row">
+                          <span class="task-check">✓</span><span>Design system updates</span
+                          ><i>Done</i>
+                        </div>
+                        <div class="mock-task-row">
+                          <span class="task-check pending">•</span><span>Review sprint backlog</span
+                          ><i>In progress</i>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="art-index">01 / PRODUCT CONCEPT</span>
+                  </div>
+                  <div class="p3-shade"></div>
+                </article>
+                <article
+                  class="p3-card"
+                  data-categories="fullstack web"
+                  data-project="chefmate"
+                  tabindex="-1"
+                >
+                  <div class="project-art chefmate-art chefmate-web-art">
+                    <div class="chefmate-web-mark">
+                      CHEF<span>MATE</span><i class="icon icon-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="chefmate-label">FRESH IDEAS.<br /><b>BETTER MEALS.</b></div>
+                    <span class="art-index">02 / FULL STACK WEBSITE</span>
+                  </div>
+                  <div class="p3-shade"></div>
+                </article>
+                <article class="p3-card" data-categories="web" data-project="krispy" tabindex="-1">
+                  <div class="project-art image-art">
+                    <img
+                      src="krispy-thumbnail.webp"
+                      alt="Krispy Tender restaurant website preview"
+                      loading="lazy"
+                    /><span class="art-index">03 / WEB EXPERIENCE</span
+                    ><span class="image-art-label">Made to<br /><em>crave.</em></span>
+                  </div>
+                  <div class="p3-shade"></div>
+                </article>
+                <article
+                  class="p3-card"
+                  data-categories="mobile"
+                  data-project="chefmate-mobile"
+                  tabindex="-1"
+                >
+                  <div class="project-art extra-art mobile-art">
+                    <div class="phone-pair">
+                      <div class="mini-phone">
+                        <div class="mini-notch"></div>
+                        <span class="mini-label">CHEFMATE</span><b>What's in<br />your kitchen?</b>
+                        <div class="mini-food"></div>
+                        <small>Find your next meal</small>
+                      </div>
+                      <div class="mini-phone phone-offset">
+                        <div class="mini-notch"></div>
+                        <span class="mini-label">YOUR RECIPES</span>
+                        <div class="mini-recipe"></div>
+                        <b>Fresh ideas.<br />Less waste.</b><small>Saved just for you</small>
+                      </div>
+                    </div>
+                    <span class="art-index">04 / FLUTTER MOBILE APP</span>
+                  </div>
+                  <div class="p3-shade"></div>
+                </article>
+                <article
+                  class="p3-card"
+                  data-categories="database"
+                  data-project="krispy-db"
+                  tabindex="-1"
+                >
+                  <div class="project-art extra-art database-art">
+                    <div class="database-window">
+                      <div class="database-top">
+                        <span>KRISPY_TENDER_DB</span><span>3NF / MYSQL</span>
+                      </div>
+                      <div class="db-table db-table-one">
+                        <b>ORDERS</b><i>order_id</i><i>customer_id</i><i>created_at</i>
+                      </div>
+                      <div class="db-table db-table-two">
+                        <b>ORDER_ITEMS</b><i>item_id</i><i>order_id</i><i>quantity</i>
+                      </div>
+                      <div class="db-table db-table-three">
+                        <b>MENU_ITEMS</b><i>item_id</i><i>category_id</i><i>price</i>
+                      </div>
+                      <span class="db-link link-one"></span><span class="db-link link-two"></span>
+                    </div>
+                    <span class="art-index">05 / DATABASE DESIGN</span>
+                  </div>
+                  <div class="p3-shade"></div>
+                </article>
+                <article
+                  class="p3-card"
+                  data-categories="networking"
+                  data-project="tcp-recipe"
+                  tabindex="-1"
+                >
+                  <div class="project-art extra-art tcp-art">
+                    <div class="tcp-scene">
+                      <div class="tcp-node node-client">
+                        <span>CLIENT</span><b>recipe.request()</b>
+                      </div>
+                      <div class="tcp-packets"><i></i><i></i><i></i><span>TCP / SOCKETS</span></div>
+                      <div class="tcp-node node-server">
+                        <span>SERVER</span><b>recipe.payload</b>
+                      </div>
+                      <div class="tcp-terminal">
+                        <span>01</span> bind() <span>02</span> listen() <span>03</span> accept()
+                      </div>
+                    </div>
+                    <span class="art-index">06 / NETWORK PROGRAMMING</span>
+                  </div>
+                  <div class="p3-shade"></div>
+                </article>
+                <article
+                  class="p3-card"
+                  data-categories="fullstack web"
+                  data-project="expense"
+                  tabindex="-1"
+                >
+                  <div class="project-art expense-art">
+                    <div class="expense-paper">
+                      <span class="expense-kicker">MONTHLY OVERVIEW</span>
+                      <div class="expense-total">$2,480<span>.00</span></div>
+                      <div class="expense-sub">Total expenses <b>↓ 8.4%</b></div>
+                      <div class="expense-bars">
+                        <i style="height: 38%"></i><i style="height: 60%"></i
+                        ><i style="height: 47%"></i><i style="height: 76%"></i
+                        ><i style="height: 52%"></i><i style="height: 92%"></i
+                        ><i style="height: 66%"></i><i style="height: 80%"></i>
+                      </div>
+                      <div class="expense-cats">
+                        <span>● Essentials</span><span>● Lifestyle</span><span>● Other</span>
+                      </div>
+                    </div>
+                    <span class="art-index">07 / TEAM PROJECT</span>
+                  </div>
+                  <div class="p3-shade"></div>
+                </article>
+              </div>
+            </div>
+            <div class="p3-info" id="p3-info" aria-live="polite">
+              <span class="p3-info-index" id="p3-idx">01</span>
+              <p class="project-type" id="p3-type"></p>
+              <h3 id="p3-title"></h3>
+              <p class="p3-desc" id="p3-desc"></p>
+              <div class="tag-row" id="p3-tags"></div>
+              <button class="button button-primary" id="p3-open" type="button">
+                Explore project <span class="icon icon-arrow" aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="p3-bottom">
+              <div class="p3-nav">
+                <span class="p3-count"
+                  ><b id="p3-current">01</b><i>/</i><span id="p3-total">07</span></span
+                ><button type="button" id="p3-prev" aria-label="Previous project">←</button
+                ><button type="button" id="p3-next" aria-label="Next project">→</button>
+              </div>
+            </div>
+            <div class="p3-progress" aria-hidden="true"><span id="p3-fill"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-section section-shell section-pad" id="experience">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">03</span> EXPERIENCE & LEADERSHIP</p>
+            <h2>
+              Building with people.<br /><span class="muted-italic">Growing through action.</span>
+            </h2>
+            <p class="section-lede">
+              A mix of software development, student leadership, event production, and teaching—each
+              role shaping how I work.
+            </p>
+          </div>
+          <span class="section-side-note">PEOPLE · PRODUCT · COMMUNITY</span>
+        </div>
+        <div class="experience-list">
+          <article class="experience-item">
+            <span class="experience-number">01</span>
+            <div class="experience-mark">{ }</div>
+            <div class="experience-copy">
+              <p class="experience-meta">SOFTWARE DEVELOPMENT · 2026</p>
+              <h3>Software Engineer Intern</h3>
+              <p class="experience-org">
+                Simigo AI – Protel <span>· Downtown Beirut, Lebanon</span>
+              </p>
+              <p>
+                Contributed to web and mobile product development, collaborating with engineers on
+                application features and payment-related workflows.
+              </p>
+            </div>
+            <span class="experience-type">ENGINEERING</span>
+          </article>
+          <article class="experience-item">
+            <span class="experience-number">02</span>
+            <div class="experience-mark">
+              <span class="icon icon-arrow" aria-hidden="true"></span>
+            </div>
+            <div class="experience-copy">
+              <p class="experience-meta">STUDENT LEADERSHIP</p>
+              <h3>Former President</h3>
+              <p class="experience-org">
+                Computer Science Society <span>· Phoenicia University</span>
+              </p>
+              <p>
+                Led technical initiatives, helped organize developer events, and supported a more
+                connected student tech community.
+              </p>
+            </div>
+            <span class="experience-type">LEADERSHIP</span>
+          </article>
+          <article class="experience-item">
+            <span class="experience-number">03</span>
+            <div class="experience-mark">
+              <span class="icon icon-star" aria-hidden="true"></span>
+            </div>
+            <div class="experience-copy">
+              <p class="experience-meta">DEVELOPER COMMUNITY</p>
+              <h3>Strategic Consultant</h3>
+              <p class="experience-org">
+                Google Developers Group on Campus <span>· Phoenicia University</span>
+              </p>
+              <p>
+                Contribute to event strategy and help shape engaging developer experiences for the
+                campus community.
+              </p>
+            </div>
+            <span class="experience-type">STRATEGY</span>
+          </article>
+          <article class="experience-item">
+            <span class="experience-number">04</span>
+            <div class="experience-mark">◎</div>
+            <div class="experience-copy">
+              <p class="experience-meta">EVENT PLANNING</p>
+              <h3>Event Planner</h3>
+              <p class="experience-org">
+                Google Developers Group on Campus <span>· Phoenicia University</span>
+              </p>
+              <p>
+                Help coordinate technology-focused events that bring students and technology
+                enthusiasts together.
+              </p>
+            </div>
+            <span class="experience-type">COMMUNITY</span>
+          </article>
+          <article class="experience-item">
+            <span class="experience-number">05</span>
+            <div class="experience-mark">
+              <span class="icon icon-star" aria-hidden="true"></span>
+            </div>
+            <div class="experience-copy">
+              <p class="experience-meta">EVENT PRODUCTION · 2022—PRESENT</p>
+              <h3>Event Manager</h3>
+              <p class="experience-org">Tsukimi.co</p>
+              <p>
+                Coordinate events from planning to on-site execution, balancing logistics, teamwork,
+                and audience experience.
+              </p>
+            </div>
+            <span class="experience-type">OPERATIONS</span>
+          </article>
+          <article class="experience-item">
+            <span class="experience-number">06</span>
+            <div class="experience-mark">⌘</div>
+            <div class="experience-copy">
+              <p class="experience-meta">EDUCATION & MENTORING</p>
+              <h3>Lecturer</h3>
+              <p class="experience-org">Future Stars Camp</p>
+              <p>
+                Teach programming fundamentals and guide students through practical, hands-on
+                learning.
+              </p>
+            </div>
+            <span class="experience-type">TEACHING</span>
+          </article>
+          <article class="experience-item">
+            <span class="experience-number">07</span>
+            <div class="experience-mark">◌</div>
+            <div class="experience-copy">
+              <p class="experience-meta">PUBLIC SPEAKING</p>
+              <h3>Speaker & Mentor</h3>
+              <p class="experience-org">Phoenicia University</p>
+              <p>
+                Introduce visiting high school students to the Computer Science major through
+                presentations and campus sessions.
+              </p>
+            </div>
+            <span class="experience-type">MENTORING</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="journey-section section-shell section-pad" id="journey">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">04</span> THE TIMELINE</p>
+            <h2>One thing led<br /><span class="muted-italic">to another.</span></h2>
+          </div>
+          <p class="section-lede">
+            A few milestones from event production to software engineering—and everything learned
+            along the way.
+          </p>
+        </div>
+        <div class="journey-track">
+          <div class="journey-line"><span id="journey-line-fill"></span></div>
+          <article class="journey-item">
+            <span class="journey-dot"></span><span class="journey-year">2022</span>
+            <div class="journey-card">
+              <p>FIRST BIG EVENTS</p>
+              <h3>Learned to make things happen.</h3>
+              <span
+                >Stepped into event management, coordinating logistics and helping turn ideas into
+                live experiences.</span
+              >
+            </div>
+          </article>
+          <article class="journey-item">
+            <span class="journey-dot"></span><span class="journey-year">2023</span>
+            <div class="journey-card">
+              <p>THE START OF CS</p>
+              <h3>Started building with code.</h3>
+              <span
+                >Began Computer Science studies at Phoenicia University and explored programming
+                fundamentals and web development.</span
+              >
+            </div>
+          </article>
+          <article class="journey-item">
+            <span class="journey-dot"></span><span class="journey-year">2024</span>
+            <div class="journey-card">
+              <p>COMMUNITY & LEADERSHIP</p>
+              <h3>Made room for others to build.</h3>
+              <span
+                >Took on leadership roles in student tech communities and contributed to workshops,
+                events, and mentoring.</span
+              >
+            </div>
+          </article>
+          <article class="journey-item">
+            <span class="journey-dot"></span><span class="journey-year">2025</span>
+            <div class="journey-card">
+              <p>REAL-WORLD PROJECTS</p>
+              <h3>Turned concepts into experiences.</h3>
+              <span
+                >Focused on frontend development and created responsive, client-facing web
+                experiences.</span
+              >
+            </div>
+          </article>
+          <article class="journey-item">
+            <span class="journey-dot"></span><span class="journey-year">2026</span>
+            <div class="journey-card">
+              <p>FULL-STACK THINKING</p>
+              <h3>Connecting every layer.</h3>
+              <span
+                >Expanded into full-stack products, mobile applications, and more complete
+                end-to-end workflows.</span
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section section-shell section-pad" id="contact">
+        <div class="contact-intro">
+          <p class="eyebrow"><span class="section-number">05</span> GET IN TOUCH</p>
+          <h2>Have a good<br />idea? <span class="burgundy-text">Let's talk.</span></h2>
+          <p>
+            Have a project in mind, a collaboration opportunity, or just want to connect? I'm always
+            open to new ideas and conversations.
+          </p>
+          <div class="contact-info-list">
+            <a href="mailto:askarisbeity@gmail.com"
+              ><span>EMAIL</span><b>askarisbeity@gmail.com</b
+              ><i class="icon icon-arrow" aria-hidden="true"></i></a
+            ><a href="tel:+96170641758"
+              ><span>PHONE</span><b>+961 70 641 758</b
+              ><i class="icon icon-arrow" aria-hidden="true"></i
+            ></a>
+            <div><span>BASED IN</span><b>Beirut, Lebanon</b><i>⌖</i></div>
+          </div>
+        </div>
+        <div class="contact-form-panel">
+          <div class="form-panel-heading">
+            <span class="form-live-dot"></span><span>LET'S MAKE SOMETHING GOOD</span
+            ><span class="form-index">01 / 01</span>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <label
+              >Your name<input
+                name="name"
+                type="text"
+                placeholder="How should I call you?"
+                required /></label
+            ><label
+              >Email address<input
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required /></label
+            ><label
+              >Phone number <span class="optional-label">OPTIONAL</span
+              ><input name="phone" type="tel" placeholder="+961 ..." /></label
+            ><label
+              >Your message<textarea
+                name="message"
+                rows="4"
+                placeholder="Tell me a little about what you have in mind..."
+                required
+              ></textarea></label
+            ><button class="button button-primary send-message" type="submit">
+              Send message <span class="icon icon-arrow" aria-hidden="true"></span>
+            </button>
+            <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="skills-section section-shell section-pad" id="skills">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">06</span> TOOLS OF THE TRADE</p>
+            <h2>My tech stack<span class="burgundy-text">.</span></h2>
+          </div>
+          <p class="section-lede">Technologies I use to turn ideas into working software.</p>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-group">
+            <h3>LANGUAGES</h3>
+            <div class="skill-chips">
+              <span>JavaScript</span><span>TypeScript</span><span>Python</span><span>SQL</span
+              ><span>Dart</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>WEB & BACKEND</h3>
+            <div class="skill-chips">
+              <span>React</span><span>Node.js</span><span>Express</span><span>HTML / CSS</span
+              ><span>REST APIs</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>MOBILE & DATA</h3>
+            <div class="skill-chips">
+              <span>Flutter</span><span>MySQL</span><span>PostgreSQL</span><span>Prisma</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>TOOLS</h3>
+            <div class="skill-chips">
+              <span>Git</span><span>GitHub</span><span>Postman</span><span>VS Code</span
+              ><span>Android Studio</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section section-shell section-pad" id="process">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">07</span> HOW I BUILD</p>
+            <h2>From idea to<br /><span class="muted-italic">shipped product.</span></h2>
+          </div>
+          <p class="section-lede">
+            A flexible process that keeps the problem clear, the implementation intentional, and the
+            final details polished.
+          </p>
+        </div>
+        <div class="process-steps">
+          <article class="process-step">
+            <span>01 / DISCOVER</span>
+            <div class="process-symbol">⌕</div>
+            <h3>Understand</h3>
+            <p>
+              Ask the right questions, explore the problem, and figure out who the product is really
+              for.
+            </p>
+          </article>
+          <article class="process-step">
+            <span>02 / PLAN</span>
+            <div class="process-symbol process-symbol-grid">▦</div>
+            <h3>Map the path</h3>
+            <p>Shape the flows, data, and interface before committing to a direction.</p>
+          </article>
+          <article class="process-step">
+            <span>03 / BUILD</span>
+            <div class="process-symbol">{ }</div>
+            <h3>Make it real</h3>
+            <p>
+              Write modular code and turn the plan into a working experience one piece at a time.
+            </p>
+          </article>
+          <article class="process-step">
+            <span>04 / TEST</span>
+            <div class="process-symbol">⌁</div>
+            <h3>Challenge it</h3>
+            <p>
+              Check edge cases, states, screen sizes, and assumptions instead of hoping they work.
+            </p>
+          </article>
+          <article class="process-step">
+            <span>05 / REFINE</span>
+            <div class="process-symbol">
+              <span class="icon icon-star" aria-hidden="true"></span>
+            </div>
+            <h3>Polish the details</h3>
+            <p>
+              Improve clarity, accessibility, performance, and motion until it feels considered.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="certificates-section section-shell section-pad" id="certificates">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">
+              <span class="section-number">08</span> AWARDS &amp; CERTIFICATIONS
+            </p>
+            <h2>
+              Proof of curiosity.<br /><span class="muted-italic">Progress in practice.</span>
+            </h2>
+          </div>
+          <div class="cert-stats">
+            <div><b>10</b><span>CERTIFICATES</span></div>
+            <div><b>06</b><span>ISSUERS</span></div>
+            <div><b>24—26</b><span>TIMELINE</span></div>
+          </div>
+        </div>
+        <div class="cert-toolbar">
+          <div
+            class="filters cert-issuer-filters"
+            role="group"
+            aria-label="Show certificates by issuer"
+          >
+            <button class="filter-button is-active" data-cert-filter="all" aria-pressed="true">
+              All</button
+            ><button class="filter-button" data-cert-filter="hackerrank" aria-pressed="false">
+              HackerRank</button
+            ><button class="filter-button" data-cert-filter="saylor" aria-pressed="false">
+              Saylor</button
+            ><button class="filter-button" data-cert-filter="ibm" aria-pressed="false">IBM</button
+            ><button class="filter-button" data-cert-filter="hp" aria-pressed="false">
+              HP LIFE</button
+            ><button class="filter-button" data-cert-filter="open" aria-pressed="false">
+              Open University</button
+            ><button class="filter-button" data-cert-filter="cisco" aria-pressed="false">
+              Cisco
+            </button>
+          </div>
+          <p class="p3-hint">CLICK A CARD TO VIEW THE CERTIFICATE</p>
+        </div>
+        <div class="cert-grid" id="cert-grid">
+          <article
+            class="cert-card cert-feature"
+            data-issuer="hackerrank"
+            data-title="Software Engineer"
+            data-org="HACKERRANK"
+            data-date="Oct 2026"
+            data-img="certs/hackerrank-software-engineer.webp"
+            tabindex="0"
+            role="button"
+            aria-label="View certificate: Software Engineer"
+          >
+            <div class="cert-preview">
+              <img
+                src="certs/hackerrank-software-engineer.webp"
+                alt="Software Engineer certificate"
+                loading="lazy"
+                draggable="false"
+              /><span class="cert-view"
+                >VIEW <i class="icon icon-arrow" aria-hidden="true"></i
+              ></span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-meta"><span>HACKERRANK</span><time>OCT 2026</time></p>
+              <h3>Software Engineer <em class="cert-new">NEW</em></h3>
+              <p class="cert-desc">
+                Role certification covering problem solving and core software engineering skills.
+                Credential ID 29000D7EBB60.
+              </p>
+              <b class="cert-num">01</b>
+            </div>
+          </article>
+          <article
+            class="cert-card"
+            data-issuer="saylor"
+            data-title="CS302: Software Engineering"
+            data-org="SAYLOR UNIVERSITY"
+            data-date="Oct 2026"
+            data-img="certs/saylor-cs302.webp"
+            tabindex="0"
+            role="button"
+            aria-label="View certificate: CS302: Software Engineering"
+          >
+            <div class="cert-preview">
+              <img
+                src="certs/saylor-cs302.webp"
+                alt="CS302: Software Engineering certificate"
+                loading="lazy"
+                draggable="false"
+              /><span class="cert-view"
+                >VIEW <i class="icon icon-arrow" aria-hidden="true"></i
+              ></span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-meta"><span>SAYLOR UNIVERSITY</span><time>OCT 2026</time></p>
+              <h3>CS302: Software Engineering <em class="cert-new">NEW</em></h3>
+              <p class="cert-desc">
+                Software engineering foundations: life cycle, requirements, design, testing, and
+                project practices.
+              </p>
+              <b class="cert-num">02</b>
+            </div>
+          </article>
+          <article
+            class="cert-card"
+            data-issuer="ibm"
+            data-title="Getting Started with Generative AI"
+            data-org="IBM SKILLSBUILD"
+            data-date="Oct 2026"
+            data-img="certs/ibm-genai.webp"
+            tabindex="0"
+            role="button"
+            aria-label="View certificate: Getting Started with Generative AI"
+          >
+            <div class="cert-preview">
+              <img
+                src="certs/ibm-genai.webp"
+                alt="Getting Started with Generative AI certificate"
+                loading="lazy"
+                draggable="false"
+              /><span class="cert-view"
+                >VIEW <i class="icon icon-arrow" aria-hidden="true"></i
+              ></span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-meta"><span>IBM SKILLSBUILD</span><time>OCT 2026</time></p>
+              <h3>Getting Started with Generative AI <em class="cert-new">NEW</em></h3>
+              <p class="cert-desc">
+                The foundations of generative AI and how these models are used in practice.
+              </p>
+              <b class="cert-num">03</b>
+            </div>
+          </article>
+          <article
+            class="cert-card"
+            data-issuer="hp"
+            data-title="Strategic Planning in the AI Age"
+            data-org="HP LIFE"
+            data-date="Oct 2026"
+            data-img="certs/hp-life-strategic-ai.webp"
+            tabindex="0"
+            role="button"
+            aria-label="View certificate: Strategic Planning in the AI Age"
+          >
+            <div class="cert-preview">
+              <img
+                src="certs/hp-life-strategic-ai.webp"
+                alt="Strategic Planning in the AI Age certificate"
+                loading="lazy"
+                draggable="false"
+              /><span class="cert-view"
+                >VIEW <i class="icon icon-arrow" aria-hidden="true"></i
+              ></span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-meta"><span>HP LIFE</span><time>OCT 2026</time></p>
+              <h3>Strategic Planning in the AI Age <em class="cert-new">NEW</em></h3>
+              <p class="cert-desc">
+                Using strategic planning to make better business decisions in an AI-driven world.
+              </p>
+              <b class="cert-num">04</b>
+            </div>
+          </article>
+          <article
+            class="cert-card"
+            data-issuer="hp"
+            data-title="Critical Thinking in the AI Era"
+            data-org="HP LIFE"
+            data-date="Oct 2026"
+            data-img="certs/hp-life-critical-thinking.webp"
+            tabindex="0"
+            role="button"
+            aria-label="View certificate: Critical Thinking in the AI Era"
+          >
+            <div class="cert-preview">
+              <img
+                src="certs/hp-life-critical-thinking.webp"
+                alt="Critical Thinking in the AI Era certificate"
+                loading="lazy"
+                draggable="false"
+              /><span class="cert-view"
+                >VIEW <i class="icon icon-arrow" aria-hidden="true"></i
+              ></span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-meta"><span>HP LIFE</span><time>OCT 2026</time></p>
+              <h3>Critical Thinking in the AI Era <em class="cert-new">NEW</em></h3>
+              <p class="cert-desc">
+                Applying critical thinking to decision-making and to fact-checking AI-generated
+                information.
+              </p>
+              <b class="cert-num">05</b>
+            </div>
+          </article>
+          <article
+            class="cert-card"
+            data-issuer="open"
+            data-title="Introduction to Web Applications Architecture"
+            data-org="OPENLEARN · THE OPEN UNIVERSITY"
+            data-date="Oct 2026"
+            data-img="certs/openlearn-web-architecture.webp"
+            tabindex="0"
+            role="button"
+            aria-label="View certificate: Introduction to Web Applications Architecture"
+          >
+            <div class="cert-preview">
+              <img
+                src="certs/openlearn-web-architecture.webp"
+                alt="Introduction to Web Applications Architecture certificate"
+                loading="lazy"
+                draggable="false"
+              /><span class="cert-view"
+                >VIEW <i class="icon icon-arrow" aria-hidden="true"></i
+              ></span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-meta">
+                <span>OPENLEARN · THE OPEN UNIVERSITY</span><time>OCT 2026</time>
+              </p>
+              <h3>Introduction to Web Applications Architecture <em class="cert-new">NEW</em></h3>
+              <p class="cert-desc">
+                A free 8-hour course on the design and implementation of web application software.
+              </p>
+              <b class="cert-num">06</b>
+            </div>
+          </article>
+          <article
+            class="cert-card"
+            data-issuer="cisco"
+            data-title="Python Essentials 2"
+            data-org="CISCO NETWORKING ACADEMY"
+            data-date="Oct 2025"
+            data-img="certs/cisco-python-2.webp"
+            tabindex="0"
+            role="button"
+            aria-label="View certificate: Python Essentials 2"
+          >
+            <div class="cert-preview">
+              <img
+                src="certs/cisco-python-2.webp"
+                alt="Python Essentials 2 certificate"
+                loading="lazy"
+                draggable="false"
+              /><span class="cert-view"
+                >VIEW <i class="icon icon-arrow" aria-hidden="true"></i
+              ></span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-meta"><span>CISCO NETWORKING ACADEMY</span><time>OCT 2025</time></p>
+              <h3>Python Essentials 2</h3>
+              <p class="cert-desc">
+                Multi-module Python programs, object-oriented thinking, and the Python Standard
+                Library.
+              </p>
+              <b class="cert-num">07</b>
+            </div>
+          </article>
+          <article
+            class="cert-card"
+            data-issuer="cisco"
+            data-title="Python Essentials 1"
+            data-org="CISCO NETWORKING ACADEMY"
+            data-date="Oct 2025"
+            data-img="certs/cisco-python-1.webp"
+            tabindex="0"
+            role="button"
+            aria-label="View certificate: Python Essentials 1"
+          >
+            <div class="cert-preview">
+              <img
+                src="certs/cisco-python-1.webp"
+                alt="Python Essentials 1 certificate"
+                loading="lazy"
+                draggable="false"
+              /><span class="cert-view"
+                >VIEW <i class="icon icon-arrow" aria-hidden="true"></i
+              ></span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-meta"><span>CISCO NETWORKING ACADEMY</span><time>OCT 2025</time></p>
+              <h3>Python Essentials 1</h3>
+              <p class="cert-desc">
+                Writing, debugging and refactoring Python 3 programs with algorithmic thinking.
+              </p>
+              <b class="cert-num">08</b>
+            </div>
+          </article>
+          <article
+            class="cert-card"
+            data-issuer="cisco"
+            data-title="Ethical Hacker"
+            data-org="CISCO NETWORKING ACADEMY"
+            data-date="Aug 2024"
+            data-img="certs/cisco-ethical-hacker.webp"
+            tabindex="0"
+            role="button"
+            aria-label="View certificate: Ethical Hacker"
+          >
+            <div class="cert-preview">
+              <img
+                src="certs/cisco-ethical-hacker.webp"
+                alt="Ethical Hacker certificate"
+                loading="lazy"
+                draggable="false"
+              /><span class="cert-view"
+                >VIEW <i class="icon icon-arrow" aria-hidden="true"></i
+              ></span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-meta"><span>CISCO NETWORKING ACADEMY</span><time>AUG 2024</time></p>
+              <h3>Ethical Hacker</h3>
+              <p class="cert-desc">
+                Ethical hacking methodology, penetration testing, and vulnerability assessment
+                fundamentals.
+              </p>
+              <b class="cert-num">09</b>
+            </div>
+          </article>
+          <article
+            class="cert-card"
+            data-issuer="cisco"
+            data-title="Introduction to Cybersecurity"
+            data-org="CISCO NETWORKING ACADEMY"
+            data-date="Jul 2024"
+            data-img="certs/cisco-cybersecurity.webp"
+            tabindex="0"
+            role="button"
+            aria-label="View certificate: Introduction to Cybersecurity"
+          >
+            <div class="cert-preview">
+              <img
+                src="certs/cisco-cybersecurity.webp"
+                alt="Introduction to Cybersecurity certificate"
+                loading="lazy"
+                draggable="false"
+              /><span class="cert-view"
+                >VIEW <i class="icon icon-arrow" aria-hidden="true"></i
+              ></span>
+            </div>
+            <div class="cert-info">
+              <p class="cert-meta"><span>CISCO NETWORKING ACADEMY</span><time>JUL 2024</time></p>
+              <h3>Introduction to Cybersecurity</h3>
+              <p class="cert-desc">
+                Core cybersecurity concepts: threats, attacks, vulnerabilities, and how to stay
+                protected.
+              </p>
+              <b class="cert-num">10</b>
+            </div>
+          </article>
+        </div>
+      </section>
+      <dialog class="cert-dialog" id="cert-dialog" aria-labelledby="cert-dialog-title">
+        <div class="dialog-bar">
+          <span class="dialog-count" id="cert-dialog-meta"></span
+          ><button class="dialog-close" id="cert-dialog-close" aria-label="Close certificate">
+            CLOSE ✕
+          </button>
+        </div>
+        <div class="cert-dialog-body">
+          <img id="cert-dialog-img" alt="" />
+          <h3 id="cert-dialog-title"></h3>
+        </div>
+      </dialog>
+    </main>
+    <a class="floating-back-top" href="#top" aria-label="Back to top" title="Back to top"
+      ><svg class="btt-svg" viewBox="0 0 64 64" aria-hidden="true">
+        <circle class="btt-track" cx="32" cy="32" r="29" />
+        <circle class="btt-ring" id="btt-ring" cx="32" cy="32" r="29" /></svg
+      ><span class="btt-core"
+        ><svg class="btt-arrow" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 19V5M5.5 11.5 12 5l6.5 6.5" /></svg
+        ><small class="btt-pct" id="btt-pct">0%</small></span
+      ></a
+    >
+
+    <footer class="site-footer section-shell">
+      <a class="wordmark" href="#top">Askari <span>Sbeity</span><i>.</i></a>
+      <p>Designed with intention. Built with curiosity.</p>
+      <span class="footer-year">© <span id="year">2026</span> ASKARI SBEITY</span>
+    </footer>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-bar">
+        <span class="dialog-count" id="dialog-count"></span
+        ><button class="dialog-close" id="dialog-close" aria-label="Close project details">
+          CLOSE ✕
+        </button>
       </div>
-    </section>
-
-    <section class="experience-section section-shell section-pad" id="experience">
-      <div class="section-heading"><div><p class="eyebrow"><span class="section-number">03</span> EXPERIENCE & LEADERSHIP</p><h2>Building with people.<br><span class="muted-italic">Growing through action.</span></h2><p class="section-lede">A mix of software development, student leadership, event production, and teaching—each role shaping how I work.</p></div><span class="section-side-note">PEOPLE · PRODUCT · COMMUNITY</span></div>
-      <div class="experience-list">
-        <article class="experience-item"><span class="experience-number">01</span><div class="experience-mark">{ }</div><div class="experience-copy"><p class="experience-meta">SOFTWARE DEVELOPMENT · 2026</p><h3>Software Engineer Intern</h3><p class="experience-org">Simigo AI – Protel <span>· Downtown Beirut, Lebanon</span></p><p>Contributed to web and mobile product development, collaborating with engineers on application features and payment-related workflows.</p></div><span class="experience-type">ENGINEERING</span></article>
-        <article class="experience-item"><span class="experience-number">02</span><div class="experience-mark">↗</div><div class="experience-copy"><p class="experience-meta">STUDENT LEADERSHIP</p><h3>Former President</h3><p class="experience-org">Computer Science Society <span>· Phoenicia University</span></p><p>Led technical initiatives, helped organize developer events, and supported a more connected student tech community.</p></div><span class="experience-type">LEADERSHIP</span></article>
-        <article class="experience-item"><span class="experience-number">03</span><div class="experience-mark">✳</div><div class="experience-copy"><p class="experience-meta">DEVELOPER COMMUNITY</p><h3>Strategic Consultant</h3><p class="experience-org">Google Developers Group on Campus <span>· Phoenicia University</span></p><p>Contribute to event strategy and help shape engaging developer experiences for the campus community.</p></div><span class="experience-type">STRATEGY</span></article>
-        <article class="experience-item"><span class="experience-number">04</span><div class="experience-mark">◎</div><div class="experience-copy"><p class="experience-meta">EVENT PLANNING</p><h3>Event Planner</h3><p class="experience-org">Google Developers Group on Campus <span>· Phoenicia University</span></p><p>Help coordinate technology-focused events that bring students and technology enthusiasts together.</p></div><span class="experience-type">COMMUNITY</span></article>
-        <article class="experience-item"><span class="experience-number">05</span><div class="experience-mark">✳</div><div class="experience-copy"><p class="experience-meta">EVENT PRODUCTION · 2022—PRESENT</p><h3>Event Manager</h3><p class="experience-org">Tsukimi.co</p><p>Coordinate events from planning to on-site execution, balancing logistics, teamwork, and audience experience.</p></div><span class="experience-type">OPERATIONS</span></article>
-        <article class="experience-item"><span class="experience-number">06</span><div class="experience-mark">⌘</div><div class="experience-copy"><p class="experience-meta">EDUCATION & MENTORING</p><h3>Lecturer</h3><p class="experience-org">Future Stars Camp</p><p>Teach programming fundamentals and guide students through practical, hands-on learning.</p></div><span class="experience-type">TEACHING</span></article>
-        <article class="experience-item"><span class="experience-number">07</span><div class="experience-mark">◌</div><div class="experience-copy"><p class="experience-meta">PUBLIC SPEAKING</p><h3>Speaker & Mentor</h3><p class="experience-org">Phoenicia University</p><p>Introduce visiting high school students to the Computer Science major through presentations and campus sessions.</p></div><span class="experience-type">MENTORING</span></article>
+      <div class="dialog-scroll" id="dialog-scroll">
+        <header class="dialog-head">
+          <p class="eyebrow" id="dialog-category">PROJECT DETAILS</p>
+          <h2 id="dialog-title">Project</h2>
+          <p class="dialog-lede" id="dialog-lede"></p>
+          <div class="tag-row" id="dialog-tags"></div>
+        </header>
+        <div class="dialog-body" id="dialog-body"></div>
+        <div class="dialog-actions" id="dialog-actions"></div>
       </div>
-    </section>
-
-    <section class="journey-section section-shell section-pad" id="journey">
-      <div class="section-heading"><div><p class="eyebrow"><span class="section-number">04</span> THE TIMELINE</p><h2>One thing led<br><span class="muted-italic">to another.</span></h2></div><p class="section-lede">A few milestones from event production to software engineering—and everything learned along the way.</p></div>
-      <div class="journey-track"><div class="journey-line"><span id="journey-line-fill"></span></div>
-        <article class="journey-item"><span class="journey-dot"></span><span class="journey-year">2022</span><div class="journey-card"><p>FIRST BIG EVENTS</p><h3>Learned to make things happen.</h3><span>Stepped into event management, coordinating logistics and helping turn ideas into live experiences.</span></div></article>
-        <article class="journey-item"><span class="journey-dot"></span><span class="journey-year">2023</span><div class="journey-card"><p>THE START OF CS</p><h3>Started building with code.</h3><span>Began Computer Science studies at Phoenicia University and explored programming fundamentals and web development.</span></div></article>
-        <article class="journey-item"><span class="journey-dot"></span><span class="journey-year">2024</span><div class="journey-card"><p>COMMUNITY & LEADERSHIP</p><h3>Made room for others to build.</h3><span>Took on leadership roles in student tech communities and contributed to workshops, events, and mentoring.</span></div></article>
-        <article class="journey-item"><span class="journey-dot"></span><span class="journey-year">2025</span><div class="journey-card"><p>REAL-WORLD PROJECTS</p><h3>Turned concepts into experiences.</h3><span>Focused on frontend development and created responsive, client-facing web experiences.</span></div></article>
-        <article class="journey-item"><span class="journey-dot"></span><span class="journey-year">2026</span><div class="journey-card"><p>FULL-STACK THINKING</p><h3>Connecting every layer.</h3><span>Expanded into full-stack products, mobile applications, and more complete end-to-end workflows.</span></div></article>
-      </div>
-    </section>
-
-    <section class="contact-section section-shell section-pad" id="contact">
-      <div class="contact-intro"><p class="eyebrow"><span class="section-number">05</span> GET IN TOUCH</p><h2>Have a good<br>idea? <span class="burgundy-text">Let's talk.</span></h2><p>Have a project in mind, a collaboration opportunity, or just want to connect? I'm always open to new ideas and conversations.</p><div class="contact-info-list"><a href="mailto:askarisbeity@gmail.com"><span>EMAIL</span><b>askarisbeity@gmail.com</b><i>↗</i></a><a href="tel:+96170641758"><span>PHONE</span><b>+961 70 641 758</b><i>↗</i></a><div><span>BASED IN</span><b>Beirut, Lebanon</b><i>⌖</i></div></div></div>
-      <div class="contact-form-panel"><div class="form-panel-heading"><span class="form-live-dot"></span><span>LET'S MAKE SOMETHING GOOD</span><span class="form-index">01 / 01</span></div><form class="contact-form" id="contact-form"><label>Your name<input name="name" type="text" placeholder="How should I call you?" required></label><label>Email address<input name="email" type="email" placeholder="you@example.com" required></label><label>Phone number <span class="optional-label">OPTIONAL</span><input name="phone" type="tel" placeholder="+961 ..."></label><label>Your message<textarea name="message" rows="4" placeholder="Tell me a little about what you have in mind..." required></textarea></label><button class="button button-primary send-message" type="submit">Send message <span>↗</span></button><p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p></form></div>
-    </section>
-
-    <section class="skills-section section-shell section-pad" id="skills">
-      <div class="section-heading"><div><p class="eyebrow"><span class="section-number">06</span> TOOLS OF THE TRADE</p><h2>My tech stack<span class="burgundy-text">.</span></h2></div><p class="section-lede">Technologies I use to turn ideas into working software.</p></div>
-      <div class="skill-grid"><div class="skill-group"><h3>LANGUAGES</h3><div class="skill-chips"><span>JavaScript</span><span>TypeScript</span><span>Python</span><span>SQL</span><span>Dart</span></div></div><div class="skill-group"><h3>WEB & BACKEND</h3><div class="skill-chips"><span>React</span><span>Node.js</span><span>Express</span><span>HTML / CSS</span><span>REST APIs</span></div></div><div class="skill-group"><h3>MOBILE & DATA</h3><div class="skill-chips"><span>Flutter</span><span>MySQL</span><span>PostgreSQL</span><span>Prisma</span></div></div><div class="skill-group"><h3>TOOLS</h3><div class="skill-chips"><span>Git</span><span>GitHub</span><span>Postman</span><span>VS Code</span><span>Android Studio</span></div></div></div>
-    </section>
-
-    <section class="process-section section-shell section-pad" id="process">
-      <div class="section-heading"><div><p class="eyebrow"><span class="section-number">07</span> HOW I BUILD</p><h2>From idea to<br><span class="muted-italic">shipped product.</span></h2></div><p class="section-lede">A flexible process that keeps the problem clear, the implementation intentional, and the final details polished.</p></div>
-      <div class="process-steps"><article class="process-step"><span>01 / DISCOVER</span><div class="process-symbol">⌕</div><h3>Understand</h3><p>Ask the right questions, explore the problem, and figure out who the product is really for.</p></article><article class="process-step"><span>02 / PLAN</span><div class="process-symbol process-symbol-grid">▦</div><h3>Map the path</h3><p>Shape the flows, data, and interface before committing to a direction.</p></article><article class="process-step"><span>03 / BUILD</span><div class="process-symbol">{ }</div><h3>Make it real</h3><p>Write modular code and turn the plan into a working experience one piece at a time.</p></article><article class="process-step"><span>04 / TEST</span><div class="process-symbol">⌁</div><h3>Challenge it</h3><p>Check edge cases, states, screen sizes, and assumptions instead of hoping they work.</p></article><article class="process-step"><span>05 / REFINE</span><div class="process-symbol">✳</div><h3>Polish the details</h3><p>Improve clarity, accessibility, performance, and motion until it feels considered.</p></article></div>
-    </section>
-
-    <section class="certificates-section section-shell section-pad" id="certificates">
-      <div class="section-heading"><div><p class="eyebrow"><span class="section-number">08</span> AWARDS &amp; CERTIFICATIONS</p><h2>Proof of curiosity.<br><span class="muted-italic">Progress in practice.</span></h2></div><div class="cert-stats"><div><b>10</b><span>CERTIFICATES</span></div><div><b>06</b><span>ISSUERS</span></div><div><b>24—26</b><span>TIMELINE</span></div></div></div>
-      <div class="cert-toolbar"><div class="filters cert-issuer-filters" role="group" aria-label="Show certificates by issuer"><button class="filter-button is-active" data-cert-filter="all" aria-pressed="true">All</button><button class="filter-button" data-cert-filter="hackerrank" aria-pressed="false">HackerRank</button><button class="filter-button" data-cert-filter="saylor" aria-pressed="false">Saylor</button><button class="filter-button" data-cert-filter="ibm" aria-pressed="false">IBM</button><button class="filter-button" data-cert-filter="hp" aria-pressed="false">HP LIFE</button><button class="filter-button" data-cert-filter="open" aria-pressed="false">Open University</button><button class="filter-button" data-cert-filter="cisco" aria-pressed="false">Cisco</button></div><p class="p3-hint">CLICK A CARD TO VIEW THE CERTIFICATE</p></div>
-      <div class="cert-grid" id="cert-grid">
-        <article class="cert-card cert-feature" data-issuer="hackerrank" data-title="Software Engineer" data-org="HACKERRANK" data-date="Oct 2026" data-img="certs/hackerrank-software-engineer.webp" tabindex="0" role="button" aria-label="View certificate: Software Engineer"><div class="cert-preview"><img src="certs/hackerrank-software-engineer.webp" alt="Software Engineer certificate" loading="lazy" draggable="false"><span class="cert-view">VIEW <i>↗</i></span></div><div class="cert-info"><p class="cert-meta"><span>HACKERRANK</span><time>OCT 2026</time></p><h3>Software Engineer <em class="cert-new">NEW</em></h3><p class="cert-desc">Role certification covering problem solving and core software engineering skills. Credential ID 29000D7EBB60.</p><b class="cert-num">01</b></div></article>
-        <article class="cert-card" data-issuer="saylor" data-title="CS302: Software Engineering" data-org="SAYLOR UNIVERSITY" data-date="Oct 2026" data-img="certs/saylor-cs302.webp" tabindex="0" role="button" aria-label="View certificate: CS302: Software Engineering"><div class="cert-preview"><img src="certs/saylor-cs302.webp" alt="CS302: Software Engineering certificate" loading="lazy" draggable="false"><span class="cert-view">VIEW <i>↗</i></span></div><div class="cert-info"><p class="cert-meta"><span>SAYLOR UNIVERSITY</span><time>OCT 2026</time></p><h3>CS302: Software Engineering <em class="cert-new">NEW</em></h3><p class="cert-desc">Software engineering foundations: life cycle, requirements, design, testing, and project practices.</p><b class="cert-num">02</b></div></article>
-        <article class="cert-card" data-issuer="ibm" data-title="Getting Started with Generative AI" data-org="IBM SKILLSBUILD" data-date="Oct 2026" data-img="certs/ibm-genai.webp" tabindex="0" role="button" aria-label="View certificate: Getting Started with Generative AI"><div class="cert-preview"><img src="certs/ibm-genai.webp" alt="Getting Started with Generative AI certificate" loading="lazy" draggable="false"><span class="cert-view">VIEW <i>↗</i></span></div><div class="cert-info"><p class="cert-meta"><span>IBM SKILLSBUILD</span><time>OCT 2026</time></p><h3>Getting Started with Generative AI <em class="cert-new">NEW</em></h3><p class="cert-desc">The foundations of generative AI and how these models are used in practice.</p><b class="cert-num">03</b></div></article>
-        <article class="cert-card" data-issuer="hp" data-title="Strategic Planning in the AI Age" data-org="HP LIFE" data-date="Oct 2026" data-img="certs/hp-life-strategic-ai.webp" tabindex="0" role="button" aria-label="View certificate: Strategic Planning in the AI Age"><div class="cert-preview"><img src="certs/hp-life-strategic-ai.webp" alt="Strategic Planning in the AI Age certificate" loading="lazy" draggable="false"><span class="cert-view">VIEW <i>↗</i></span></div><div class="cert-info"><p class="cert-meta"><span>HP LIFE</span><time>OCT 2026</time></p><h3>Strategic Planning in the AI Age <em class="cert-new">NEW</em></h3><p class="cert-desc">Using strategic planning to make better business decisions in an AI-driven world.</p><b class="cert-num">04</b></div></article>
-        <article class="cert-card" data-issuer="hp" data-title="Critical Thinking in the AI Era" data-org="HP LIFE" data-date="Oct 2026" data-img="certs/hp-life-critical-thinking.webp" tabindex="0" role="button" aria-label="View certificate: Critical Thinking in the AI Era"><div class="cert-preview"><img src="certs/hp-life-critical-thinking.webp" alt="Critical Thinking in the AI Era certificate" loading="lazy" draggable="false"><span class="cert-view">VIEW <i>↗</i></span></div><div class="cert-info"><p class="cert-meta"><span>HP LIFE</span><time>OCT 2026</time></p><h3>Critical Thinking in the AI Era <em class="cert-new">NEW</em></h3><p class="cert-desc">Applying critical thinking to decision-making and to fact-checking AI-generated information.</p><b class="cert-num">05</b></div></article>
-        <article class="cert-card" data-issuer="open" data-title="Introduction to Web Applications Architecture" data-org="OPENLEARN · THE OPEN UNIVERSITY" data-date="Oct 2026" data-img="certs/openlearn-web-architecture.webp" tabindex="0" role="button" aria-label="View certificate: Introduction to Web Applications Architecture"><div class="cert-preview"><img src="certs/openlearn-web-architecture.webp" alt="Introduction to Web Applications Architecture certificate" loading="lazy" draggable="false"><span class="cert-view">VIEW <i>↗</i></span></div><div class="cert-info"><p class="cert-meta"><span>OPENLEARN · THE OPEN UNIVERSITY</span><time>OCT 2026</time></p><h3>Introduction to Web Applications Architecture <em class="cert-new">NEW</em></h3><p class="cert-desc">A free 8-hour course on the design and implementation of web application software.</p><b class="cert-num">06</b></div></article>
-        <article class="cert-card" data-issuer="cisco" data-title="Python Essentials 2" data-org="CISCO NETWORKING ACADEMY" data-date="Oct 2025" data-img="certs/cisco-python-2.webp" tabindex="0" role="button" aria-label="View certificate: Python Essentials 2"><div class="cert-preview"><img src="certs/cisco-python-2.webp" alt="Python Essentials 2 certificate" loading="lazy" draggable="false"><span class="cert-view">VIEW <i>↗</i></span></div><div class="cert-info"><p class="cert-meta"><span>CISCO NETWORKING ACADEMY</span><time>OCT 2025</time></p><h3>Python Essentials 2</h3><p class="cert-desc">Multi-module Python programs, object-oriented thinking, and the Python Standard Library.</p><b class="cert-num">07</b></div></article>
-        <article class="cert-card" data-issuer="cisco" data-title="Python Essentials 1" data-org="CISCO NETWORKING ACADEMY" data-date="Oct 2025" data-img="certs/cisco-python-1.webp" tabindex="0" role="button" aria-label="View certificate: Python Essentials 1"><div class="cert-preview"><img src="certs/cisco-python-1.webp" alt="Python Essentials 1 certificate" loading="lazy" draggable="false"><span class="cert-view">VIEW <i>↗</i></span></div><div class="cert-info"><p class="cert-meta"><span>CISCO NETWORKING ACADEMY</span><time>OCT 2025</time></p><h3>Python Essentials 1</h3><p class="cert-desc">Writing, debugging and refactoring Python 3 programs with algorithmic thinking.</p><b class="cert-num">08</b></div></article>
-        <article class="cert-card" data-issuer="cisco" data-title="Ethical Hacker" data-org="CISCO NETWORKING ACADEMY" data-date="Aug 2024" data-img="certs/cisco-ethical-hacker.webp" tabindex="0" role="button" aria-label="View certificate: Ethical Hacker"><div class="cert-preview"><img src="certs/cisco-ethical-hacker.webp" alt="Ethical Hacker certificate" loading="lazy" draggable="false"><span class="cert-view">VIEW <i>↗</i></span></div><div class="cert-info"><p class="cert-meta"><span>CISCO NETWORKING ACADEMY</span><time>AUG 2024</time></p><h3>Ethical Hacker</h3><p class="cert-desc">Ethical hacking methodology, penetration testing, and vulnerability assessment fundamentals.</p><b class="cert-num">09</b></div></article>
-        <article class="cert-card" data-issuer="cisco" data-title="Introduction to Cybersecurity" data-org="CISCO NETWORKING ACADEMY" data-date="Jul 2024" data-img="certs/cisco-cybersecurity.webp" tabindex="0" role="button" aria-label="View certificate: Introduction to Cybersecurity"><div class="cert-preview"><img src="certs/cisco-cybersecurity.webp" alt="Introduction to Cybersecurity certificate" loading="lazy" draggable="false"><span class="cert-view">VIEW <i>↗</i></span></div><div class="cert-info"><p class="cert-meta"><span>CISCO NETWORKING ACADEMY</span><time>JUL 2024</time></p><h3>Introduction to Cybersecurity</h3><p class="cert-desc">Core cybersecurity concepts: threats, attacks, vulnerabilities, and how to stay protected.</p><b class="cert-num">10</b></div></article>
-      </div>
-    </section>
-    <dialog class="cert-dialog" id="cert-dialog" aria-labelledby="cert-dialog-title"><div class="dialog-bar"><span class="dialog-count" id="cert-dialog-meta"></span><button class="dialog-close" id="cert-dialog-close" aria-label="Close certificate">CLOSE ✕</button></div><div class="cert-dialog-body"><img id="cert-dialog-img" alt=""><h3 id="cert-dialog-title"></h3></div></dialog>
-  </main>
-  <a class="floating-back-top" href="#top" aria-label="Back to top" title="Back to top"><svg class="btt-svg" viewBox="0 0 64 64" aria-hidden="true"><circle class="btt-track" cx="32" cy="32" r="29"/><circle class="btt-ring" id="btt-ring" cx="32" cy="32" r="29"/></svg><span class="btt-core"><svg class="btt-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg><small class="btt-pct" id="btt-pct">0%</small></span></a>
-
-  <footer class="site-footer section-shell"><a class="wordmark" href="#top">Askari <span>Sbeity</span><i>.</i></a><p>Designed with intention. Built with curiosity.</p><span class="footer-year">© <span id="year">2026</span> ASKARI SBEITY</span></footer>
-
-  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
-    <div class="dialog-bar"><span class="dialog-count" id="dialog-count"></span><button class="dialog-close" id="dialog-close" aria-label="Close project details">CLOSE ✕</button></div>
-    <div class="dialog-scroll" id="dialog-scroll">
-      <header class="dialog-head"><p class="eyebrow" id="dialog-category">PROJECT DETAILS</p><h2 id="dialog-title">Project</h2><p class="dialog-lede" id="dialog-lede"></p><div class="tag-row" id="dialog-tags"></div></header>
-      <div class="dialog-body" id="dialog-body"></div>
-      <div class="dialog-actions" id="dialog-actions"></div>
-    </div>
-  </dialog>
-</body>
+    </dialog>
+  </body>
 </html>
